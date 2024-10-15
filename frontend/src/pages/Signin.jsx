@@ -25,7 +25,7 @@ const Signin = () => {
     setError("");
     try {
       const res = await axios.post(
-        "https://api-ecommers-vv78.onrender.com/api/v1/auth/signin",
+        "/api/v1/auth/signin",
         form,{
           withCredentials:true,
         }
