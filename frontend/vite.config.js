@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://api-ecommers-1buh.onrender.com/api',
+        target: 'https://ecommers-website-xs03.onrender.com/api',
         secure:false,
         changeOrigin: true,
         }
