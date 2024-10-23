@@ -13,7 +13,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/v1/product/');
+        const response = await axios.get('/api/v1/product/');
         setProducts(response.data.products);
         setFilteredProducts(response.data.products); // Initially, filteredProducts is the same as fetched products
         setLoading(false);
